@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="controllerUpdate.js"></script></head> 
+<body>
+
+<div class="container">
+  <h2>Update User</h2>
+  <form action="" method="put" id="form">
+
+    <div class="form-group">
+      <label for="title">Title:</label>
+      <p id="titleOld"></p>
+      <input class="form-control" id="title" placeholder="Enter title" name="title">
+    </div>
+
+    <div class="form-group">
+        <label for="username">Username:</label>
+        <p id="usernameOld"></p>
+        <input class="form-control" id="username" placeholder="Enter username" name="username">
+    </div>
+
+    <div class="form-group">
+        <label for="description">Description:</label>
+        <p id="descriptionOld"></p>
+        <input class="form-control" id="description" placeholder="Enter description" name="description">
+    </div>
+
+    <div class="form-group">
+        <label for="imageUrl">Image Url:</label>
+        <p id="imageUrlOld"></p>
+        <input class="form-control" id="imageUrl" placeholder="Enter image URL" name="imageUrl">
+    </div>
+
+
+    <button type='button' class="btn btn-success btn-lg" id="update-button">Update User</button>
+  </form>
+</div>
+
+</body>
+</html>

@@ -1,4 +1,4 @@
-package com.example.zuul;
+package com.example.cloud.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,10 +8,10 @@ import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 @EnableEurekaClient
 @EnableZuulProxy
 @SpringBootApplication
-public class ZuulApplication {
+public class CloudGatewayApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ZuulApplication.class, args);
+		SpringApplication.run(CloudGatewayApplication.class, args);
 	}
 
 }

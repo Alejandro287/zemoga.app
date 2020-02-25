@@ -1,10 +1,10 @@
-package com.example.zuul;
+package com.example.cloud.gateway;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ZuulApplicationTests {
+class CloudGatewayApplicationTests {
 
 	@Test
 	void contextLoads() {

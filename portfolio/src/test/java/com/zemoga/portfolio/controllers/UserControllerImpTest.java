@@ -35,6 +35,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.function.Function;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.ArgumentMatchers.any;
@@ -115,7 +116,7 @@ class UserControllerImpTest {
         Mockito.when(userLinksService.getAll())
                 .thenReturn(Mono.just(new CollectionModel<>(Arrays.asList(user1, user2), new Link("link"))));
 
-       List<Object> result =
+       Stream<Object> result =
               Objects.requireNonNull(webClient.get()
                       .uri("/api/users")
                       .accept(MediaType.APPLICATION_JSON)
@@ -125,9 +126,7 @@ class UserControllerImpTest {
                       .returnResult()
                       .getResponseBody())
                       .stream()
-                      .map(CollectionModel::getContent)
-                      .flatMap(Collection::stream)
-                      .collect(Collectors.toList());
+                      .map(CollectionModel::getContent);
 
         Mockito.verify(userLinksService, times(1)).getAll();
     }

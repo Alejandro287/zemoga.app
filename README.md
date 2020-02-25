@@ -49,19 +49,19 @@ $ mvn spring-boot:run
 
 After running every component of the app, go to portfolio_front and open in your browser the userList.html
 
-<!--![Image upload screen](https://octodex.github.com/images/yaktocat.png)-->
+![Image upload screen](userList.JPG)
 
 You can now navigate to any user profile page. 
 
-<!--![Image upload screen](https://octodex.github.com/images/yaktocat.png)-->
+![Image upload screen](user.JPG)
 
 From this page you can be redirecto to Twitter posts. 
 
-<!--![Image upload screen](https://octodex.github.com/images/yaktocat.png)-->
+![Image Tweet](Tweet.JPG)
 
 If you click on the button you will go to another screen to upload the user information.
 
-<!--![Image upload screen](https://octodex.github.com/images/yaktocat.png)-->
+![Image upload screen](updateUser.JPG)
 
 ### Using of the Backend side of the application
 

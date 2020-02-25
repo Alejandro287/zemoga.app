@@ -79,8 +79,7 @@ public class TwitterControllerImpTest {
                         .stream()
                         .map(CollectionModel::getContent)
                         .flatMap(Collection::stream)
-                        .collect(Collectors.toList())
-                        .get(0);
+                        .collect(Collectors.toList());
 
         Mockito.verify(twitterService, times(1)).getTimeLine(id);
     }

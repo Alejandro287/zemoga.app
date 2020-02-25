@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b43abc5-66a3-4796-81e1-6b45839c7d9a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../cloud-gateway/src/main/java/com/example/zuul/ZuulApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cloud-gateway/src/main/java/com/example/cloud/gateway/CloudGatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cloud-gateway/src/test/java/com/example/zuul/ZuulApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cloud-gateway/src/test/java/com/example/cloud/gateway/CloudGatewayApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eureka-server/src/main/resources/bootstrap.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../portfolio/src/main/java/com/zemoga/portfolio/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio/src/main/java/com/zemoga/portfolio/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eureka-server/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eureka-server/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eureka-server/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eureka-server/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eureka-server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eureka-server/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eureka-server/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/test/java/com/zemoga/portfolio/controllers/TwitterControllerImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio/src/test/java/com/zemoga/portfolio/controllers/TwitterControllerImpTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portfolio/src/test/java/com/zemoga/portfolio/controllers/UserControllerImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio/src/test/java/com/zemoga/portfolio/controllers/UserControllerImpTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +49,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../portfolio" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../eureka-server" />
   </component>
   <component name="RunManager" selected="Application.ConfigServerApplication">
     <configuration name="ConfigServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -98,9 +101,9 @@
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
     <state x="2174" y="409" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1582672031095" />
-    <state x="2106" y="275" key="FileChooserDialogImpl" timestamp="1582671416283">
+    <state x="2106" y="275" key="FileChooserDialogImpl" timestamp="1582672299246">
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
-    <state x="2106" y="275" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1582671416283" />
+    <state x="2106" y="275" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1582672299246" />
   </component>
 </project>

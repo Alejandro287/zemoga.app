@@ -1,7 +1,7 @@
 package com.zemoga.portfolio.services;
 
-import com.zemoga.portfolio.cotrollers.TwitterController;
-import com.zemoga.portfolio.cotrollers.UserController;
+import com.zemoga.portfolio.controllers.TwitterController;
+import com.zemoga.portfolio.controllers.UserController;
 import com.zemoga.portfolio.exceptions.UserNotFoundException;
 import com.zemoga.portfolio.models.Tweet;
 import com.zemoga.portfolio.models.User;

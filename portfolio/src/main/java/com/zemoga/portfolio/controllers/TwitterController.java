@@ -1,6 +1,7 @@
-package com.zemoga.portfolio.cotrollers;
+package com.zemoga.portfolio.controllers;
 
 import com.zemoga.portfolio.models.Tweet;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.hateoas.CollectionModel;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -10,6 +11,8 @@ import twitter4j.TwitterException;
 
 @RequestMapping(path = "/api/users")
 public interface TwitterController {
+    @ApiOperation(value = "Get the five last tweets posted for the user",
+            notes = "Also, it returns a link to retrieve all user with rel - users and the user owner of the tweets - user")
     @GetMapping(path = "/{id}/tweets", produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
     @ResponseStatus(HttpStatus.OK)

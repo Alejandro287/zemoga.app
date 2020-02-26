@@ -29,8 +29,9 @@ $ mvn spring-boot:run
 
 * JDK 1.8
 * Java 8
-* Spring Boot 
-* Lombok: avoid boilerplate code .
+* Spring 5
+* Spring Boot 2
+* Lombok: avoid boilerplate code.
 * MySQL: SQL database and its connector with Spring.
 * Spring HATEOAS: Implement a Hypermedia Driven RESTful API
 * Twitter4j: Connector with Twitter API.
@@ -65,19 +66,247 @@ If you click on the button you will go to another screen to upload the user info
 
 ### Using of the Backend side of the application
 
+A example of the use of the API and its differents endpoints will be shown following.   
+
+### GET  -  http://localhost:8081/api/users
+
+This endpoint returns the user list.
+
+* Parameters: N/A
+
+* Response: (JSON)
+
+```sh
+{
+    "_embedded": {
+        "users": [
+            {
+                "id": 1,
+                "description": "Lord Commander of the Night's Watch and King of the Free Folk",
+                "imageUrl": "https://pbs.twimg.com/profile_images/901947348699545601/hqRMHITj_400x400.jpg",
+                "username": "LordSnow",
+                "title": "Jon Snow",
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8081/api/users/1"
+                    },
+                    "tweets": {
+                        "href": "http://localhost:8081/api/users/1/tweets"
+                    }
+                }
+            },
+            {
+                "id": 2,
+                "description": "The Mother of Dragons",
+                "imageUrl": "https://pbs.twimg.com/profile_images/1117967801652617216/i8PWXebo_400x400.jpg",
+                "username": "Daenerys",
+                "title": "Daenerys Targaryen",
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8081/api/users/2"
+                    },
+                    "tweets": {
+                        "href": "http://localhost:8081/api/users/2/tweets"
+                    }
+                }
+            },
+            {
+                "id": 3,
+                "description": "Tyrion of House Lannister. Imp, Halfman. Never forget what you are, for surely the world will not",
+                "imageUrl": "https://pbs.twimg.com/profile_images/668279339838935040/8sUE9d4C_400x400.jpg",
+                "username": "GoT_Tyrion",
+                "title": "Tyrion Lannister",
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8081/api/users/3"
+                    },
+                    "tweets": {
+                        "href": "http://localhost:8081/api/users/3/tweets"
+                    }
+                }
+            },
+            {
+                "id": 4,
+                "description": "Sansa like true knights, songs and dogs. I hate babysitting. Currently being polite and trying not to die",
+                "imageUrl": "https://pbs.twimg.com/profile_images/1812114126/newtwitter_400x400.jpg",
+                "username": "Lady_Sansa",
+                "title": "Sansa Stark",
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8081/api/users/4"
+                    },
+                    "tweets": {
+                        "href": "http://localhost:8081/api/users/4/tweets"
+                    }
+                }
+            }
+        ]
+    },
+    "_links": {
+        "self": {
+            "href": "http://localhost:8081/api/users"
+        }
+    }
+}
+```
+
+### GET  -  http://localhost:8081/api/users/1
+
+This endpoint resturns a specific user data.
+
+* Parameters: N/A
+
+* Response: (JSON)
+
+```sh
+{
+    "id": 1,
+    "description": "Lord Commander of the Night's Watch and King of the Free Folk",
+    "imageUrl": "https://pbs.twimg.com/profile_images/901947348699545601/hqRMHITj_400x400.jpg",
+    "username": "LordSnow",
+    "title": "Jon Snow",
+    "_links": {
+        "self": {
+            "href": "/api/users/1"
+        },
+        "users": {
+            "href": "/api/users"
+        },
+        "tweets": {
+            "href": "/api/users/1/tweets"
+        }
+    }
+}
+```
+
+### GET  -  http://localhost:8081/api/users/1/tweets
+
+This endpoint returns the five last Tweets posted for the user in their twitter account.
+
+* Parameters: N/A
+
+* Response: (JSON)
+
+```sh
+{
+    "_embedded": {
+        "tweets": [
+            {
+                "name": "Jon Snow",
+                "text": "Get the popular Dragon Rings for FREE now!🔥 Just cover shipping✈️\n\nLink: https://t.co/CdRFLwCzyj https://t.co/hsYwuwIIVM",
+                "_links": {
+                    "self": {
+                        "href": "https://twitter.com/LordSnow/status/1230949186738302982"
+                    }
+                }
+            },
+            {
+                "name": "Jon Snow",
+                "text": "https://t.co/reotGSUszQ",
+                "_links": {
+                    "self": {
+                        "href": "https://twitter.com/LordSnow/status/1230466489884516352"
+                    }
+                }
+            },
+            {
+                "name": "Jon Snow",
+                "text": "That reaction 😂 https://t.co/yK7vBsPuhy",
+                "_links": {
+                    "self": {
+                        "href": "https://twitter.com/LordSnow/status/1229355758992732162"
+                    }
+                }
+            },
+            {
+                "name": "Stranger Things",
+                "text": "First official teaser for Stranger Things season 4! https://t.co/HgV5c0JHra",
+                "_links": {
+                    "self": {
+                        "href": "https://twitter.com/stnetflixtv/status/1228332795984039936"
+                    }
+                }
+            },
+            {
+                "name": "Jon Snow",
+                "text": "Happy Valentine's Day 🌹🗡️ https://t.co/eeRW7zi42P",
+                "_links": {
+                    "self": {
+                        "href": "https://twitter.com/LordSnow/status/1228264673914576896"
+                    }
+                }
+            }
+        ]
+    },
+    "_links": {
+        "self": {
+            "href": "http://localhost:8081/api/users/1/tweets"
+        },
+        "user": {
+            "href": "http://localhost:8081/api/users/1"
+        },
+        "users": {
+            "href": "http://localhost:8081/api/users"
+        }
+    }
+}
+```
+
+### PUT  -  http://localhost:8081/api/users/1/tweets
+
+This endpoint is used to update a user, providing in the body the new data in JSON format.
+
+* Parameters:
+
+Body: (JSON)
+
+```sh
+{
+    "description": "Lord Commander of the Night's Watch and King of the Free Folk",
+    "imageUrl": "https://pbs.twimg.com/profile_images/901947348699545601/hqRMHITj_400x400.jpg",
+    "username": "LordSnow",
+    "title": "Juan Nieve"
+}
+```
+
+* Response: (JSON)
+
+```sh
+{
+    "id": 1,
+    "description": "Lord Commander of the Night's Watch and King of the Free Folk",
+    "imageUrl": "https://pbs.twimg.com/profile_images/901947348699545601/hqRMHITj_400x400.jpg",
+    "username": "LordSnow",
+    "title": "Juan Nieve",
+    "_links": {
+        "self": {
+            "href": "/api/users/1"
+        },
+        "users": {
+            "href": "/api/users"
+        },
+        "tweets": {
+            "href": "/api/users/1/tweets"
+        }
+    }
+}
+```
+
 ### API Documentation
+
+The Swagger documentation autogenerated from the API is shown in following link. 
+
+https://app.swaggerhub.com/apis-docs/Alejandro287/PORTFOLIO_JAVA_WEB_APP/1.0.0
 
 ### Diagram of the architecture 
 
-## Deployment
+## Built
 
-Add additional notes about how to deploy this on a live system
+## Deployment
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
 * [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
 ## Versioning
 
@@ -85,6 +314,4 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Alejandro Cano Rico** - *3134752698* - *alejocano287@gmail.com* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project
+* **Alejandro Cano Rico** - *3134752698* - *alejocano287@gmail.com* 

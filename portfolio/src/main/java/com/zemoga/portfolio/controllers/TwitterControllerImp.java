@@ -1,8 +1,7 @@
-package com.zemoga.portfolio.cotrollers;
+package com.zemoga.portfolio.controllers;
 
 import com.zemoga.portfolio.models.Tweet;
 import com.zemoga.portfolio.services.TwitterService;
-import com.zemoga.portfolio.services.TwitterServiceImp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.hateoas.CollectionModel;
 import org.springframework.web.bind.annotation.RestController;

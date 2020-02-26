@@ -1,13 +1,8 @@
 package com.zemoga.portfolio.controllers;
 
-import com.zemoga.portfolio.cotrollers.TwitterController;
-import com.zemoga.portfolio.cotrollers.TwitterControllerImp;
-import com.zemoga.portfolio.cotrollers.UserController;
 import com.zemoga.portfolio.models.Tweet;
-import com.zemoga.portfolio.models.User;
 import com.zemoga.portfolio.services.TwitterService;
 import com.zemoga.portfolio.services.TwitterServiceImp;
-import com.zemoga.portfolio.services.UserLinksService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -27,7 +22,6 @@ import twitter4j.TwitterException;
 
 import java.util.Arrays;
 import java.util.Collection;
-import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
 

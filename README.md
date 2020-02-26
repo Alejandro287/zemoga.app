@@ -1,6 +1,6 @@
 # Portfolio Java Web App
 
-This is a the tech test for the position of Java Developer
+This is a tech test for the position of Java Developer
 
 ## Getting Started
 
@@ -9,7 +9,6 @@ This is a the tech test for the position of Java Developer
 ```sh
 $ git clone https://github.com/Alejandro287/zemoga.app.git
 ```
-
 3. Change the current working directory to each derectory and run each spring boot project typing the following command:
 ```sh
 $ mvn spring-boot:run
@@ -31,16 +30,17 @@ $ mvn spring-boot:run
 * Java 8
 * Spring 5
 * Spring Boot 2
+* Spring Data
 * Lombok: avoid boilerplate code.
 * MySQL: SQL database and its connector with Spring.
 * Spring HATEOAS: Implement a Hypermedia Driven RESTful API
 * Twitter4j: Connector with Twitter API.
-* Project Spring Reactor Webflux: UImplement rective programming and recative oriented API.
+* Project Spring Reactor Webflux: Implement rective programming and recative oriented API.
 * Spring Cloud Config: Externalize configuration of the services.
 * Spring Cloud Netflix Eureka: A server registry and service discovery.
 * Spring Cloud Netflix Zuul: The Gateway and router to the services.
 * Spring Actuator: Expose operational information about the running application
-* Ajax/Jquery
+* Ajax/jQuery
 * Junit 5
 * Fourth level of API RESTful
 * Microservices Architecture
@@ -66,7 +66,7 @@ If you click on the button you will go to another screen to upload the user info
 
 ## Using of the Backend side of the application
 
-A example of the use of the API and its differents endpoints will be shown following.   
+An example of the use of the API and its differents endpoints will be shown following.   
 
 ### GET  -  http://localhost:8081/api/users
 
@@ -152,7 +152,7 @@ This endpoint returns the user list.
 
 ### GET  -  http://localhost:8081/api/users/1
 
-This endpoint resturns a specific user data.
+This endpoint returns a specific user data.
 
 * Parameters: N/A
 
@@ -315,3 +315,4 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 ## Authors
 
 * **Alejandro Cano Rico** - *3134752698* - *alejocano287@gmail.com* 
+

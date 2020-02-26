@@ -2,29 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b43abc5-66a3-4796-81e1-6b45839c7d9a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../portfolio/src/main/java/com/zemoga/portfolio/config/ApiDocumentationConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../portfolio/src/main/java/com/zemoga/portfolio/config/SwaggerConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cloud-gateway/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../cloud-gateway/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eureka-server/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eureka-server/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../eureka-server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eureka-server/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eureka-server/eureka-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../eureka-server/eureka-server.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eureka-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eureka-server/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../portfolio/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../portfolio/src/main/java/com/zemoga/portfolio/cotrollers/TwitterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio/src/main/java/com/zemoga/portfolio/controllers/TwitterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../portfolio/src/main/java/com/zemoga/portfolio/cotrollers/TwitterControllerImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio/src/main/java/com/zemoga/portfolio/controllers/TwitterControllerImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../portfolio/src/main/java/com/zemoga/portfolio/cotrollers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio/src/main/java/com/zemoga/portfolio/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../portfolio/src/main/java/com/zemoga/portfolio/cotrollers/UserControllerImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio/src/main/java/com/zemoga/portfolio/controllers/UserControllerImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../portfolio/src/main/java/com/zemoga/portfolio/models/ErrorMessage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../portfolio/src/main/java/com/zemoga/portfolio/models/Tweet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio/src/main/java/com/zemoga/portfolio/models/Tweet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../portfolio/src/main/java/com/zemoga/portfolio/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio/src/main/java/com/zemoga/portfolio/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../portfolio/src/main/java/com/zemoga/portfolio/services/TwitterServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio/src/main/java/com/zemoga/portfolio/services/TwitterServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../portfolio/src/main/java/com/zemoga/portfolio/services/UserLinksServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio/src/main/java/com/zemoga/portfolio/services/UserLinksServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../portfolio/src/test/java/com/zemoga/portfolio/controllers/TwitterControllerImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio/src/test/java/com/zemoga/portfolio/controllers/TwitterControllerImpTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../portfolio/src/test/java/com/zemoga/portfolio/controllers/UserControllerImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../portfolio/src/test/java/com/zemoga/portfolio/controllers/UserControllerImpTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +101,7 @@
       <updated>1582629142421</updated>
       <workItem from="1582629148206" duration="889000" />
       <workItem from="1582633205405" duration="6260000" />
-      <workItem from="1582685197667" duration="2126000" />
+      <workItem from="1582685197667" duration="2460000" />
     </task>
     <servers />
   </component>

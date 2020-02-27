@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b43abc5-66a3-4796-81e1-6b45839c7d9a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../eureka-server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eureka-server/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -101,7 +100,7 @@
       <updated>1582629142421</updated>
       <workItem from="1582629148206" duration="889000" />
       <workItem from="1582633205405" duration="6260000" />
-      <workItem from="1582685197667" duration="2460000" />
+      <workItem from="1582685197667" duration="3954000" />
     </task>
     <servers />
   </component>

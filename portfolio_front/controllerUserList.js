@@ -6,7 +6,7 @@ $(document).ready(function () {
     localStorage.clear();
 
     $.ajax({
-        url: 'http://localhost:8081/api/users',
+        url: 'http://localhost:8765/portfolio/api/users',
         method: 'get',
         dataType: 'json',
         success: function (response) {

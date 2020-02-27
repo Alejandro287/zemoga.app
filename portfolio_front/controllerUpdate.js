@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     var userId = localStorage.getItem('user-id')
-    var url = 'http://localhost:8081/api/users/'+userId;
+    var url = 'http://localhost:8765/portfolio/api/users/'+userId;
 
     var title = localStorage.getItem('title')
     var username = localStorage.getItem('username')
